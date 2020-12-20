@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>衣服购物</title>
+	<link rel="stylesheet" href="style.css">
+	<style type="text/css">
+		 *{
+                margin: 0;
+                padding: 0;
+            }
+        .header{
+            width:1000px;
+            height:200px ;
+            border-top: 5px solid red;
+            margin: 0 auto;
+        }
+        .van{
+            width: 1000px;
+            height:50px ;
+            border-top: 1px solid blue;
+            margin: 0 auto;
+            margin-left: 200px;
+        }
+        .banner{
+            width:1000px ;
+            height: 1300px;
+            margin: 0 auto;
+            margin-top: 40px;
+        }
+        .logo{
+            float: left;
+        }
+        .z{     list-style: none;
+                float: left;
+                margin-left: 0px;
+                margin-bottom:0px;
+                margin-top: 10px;
+                width:250px;
+                height:250px;
+                position: relative;
+        }
+        .l{
+                width: 235px;
+                height: 100px;
+                color: black;
+                padding-left: 10px;
+                margin-top: 5px;
+                background-color: white;
+                position: absolute;
+                bottom: 0;
+                opacity: 0.4;       
+        }
+        .gao{
+            color: red;
+            font-size: 40px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        .b{
+            width:1000px;
+            height: 60px;
+            color: orange;
+            font-size: 30px;
+            background-color: white;
+        }
+        .c{
+            width:1000px;
+            height: 250px;
+        }
+        .w{
+            font-size: 40px;
+
+        }
+        
+        li:hover{
+                border-bottom: 3px solid blue;
+            }
+            ul{
+                padding-left: 0px;
+                font-size: 30px;
+                color: black;
+                text-decoration: none;
+                list-style: none;
+                position: relative;
+                top:0px;
+                left: 0px;
+                width: 1000px;
+                height: 50px;
+                display:inline;
+                line-height: 40px;
+                margin-left: 0px;
+            }
+            li{
+                display: inline;
+            }
+            .search{
+                font-size: 20px;
+            }
+            .shuzu{
+            	width: 1000px;
+            	height: 1000px;
+            	
+            }
+            #shu{
+            	width: 500px;
+            	height: 500px;
+            	background-color: red;
+            }
+            #answer{
+            	width: 200px;
+            	height: 200px;
+            }
+            #times{
+                width: 200px;
+                height: 20px;          
+                border: 3px solid gray;
+             	position: absolute;
+             	left: 250px;  
+           }
+	</style>
+	<script type = "text/javascript" src="animate.js">
+	</script>
+	
+</head>
+<body>
+	<div class="header">
+    <div class="logo">
+    <img src="./timg (13).jpg">
+    </div>
+    <div class="search">
+        <div class="yong">
+            <div class="set0">用户名：</div>
+            <input type="text" name = "用户名"  id = "ming">
+        </div>
+        <div id = "one">
+        </div>
+        <div class = "mi">
+            <div class="set">密码:</div>
+            <input type="password" name = "密码"  id="mima">
+        </div>
+        <div id="two">
+        </div>
+        <div class = "li">
+            <button id = "liji">立即登录</button>
+        </div>
+        <div id="box">   
+        </div>
+    </div>
+	</div>
+	<div class="nav">
+    <ul>
+        <li>首页</li>
+        <li>帽子</li>
+        <li>衬衫</li>
+        <li>裤子</li>
+        <li>鞋子</li>
+    </ul>
+	</div>
+	<div id="times">            
+	        </div>
+	<div class="banner">
+    <div class="b">帽子</div>
+    <hr>
+    <div class="c">
+    <div class="z">
+    <img src="./-476691415.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    <div class="z">
+    <img src="./579054634.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    <div class="z">
+    <img src="./1417048387.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    <div class="z">
+    <img src="./1685679898.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    </div>
+    <div class="b">衬衫</div>
+    <hr>
+    <div class="c">
+    <div class="z">
+    <img src="./747561466.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    <div class="z">
+    <img src="./971240314.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    <div class="z">
+    <img src="./1889816191.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    <div class="z">
+    <img src="./2064440842.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    </div>
+    <div class="b">裤子</div>
+    <hr>
+    <div class="c">
+    <div class="z">
+    <img src="./-531619283.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    <div class="z">
+    <img src="./560374677.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    <div class="z">
+    <img src="./-833723772.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    <div class="z">
+    <img src="./1567654882.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    </div>
+    <div class="b">鞋子</div>
+    <hr>
+    <div class="c">
+    <div class="z">
+    <img src="./92696840.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    <div class="z">
+    <img src="./433919441.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    <div class="z">
+    <img src="./-545735679.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    <div class="z">
+    <img src="./1237200888.jpg">
+    <div class="l">
+        <span class="gao">￥50元</span>
+    </div>
+    </div>
+    </div>
+	</div>
+
+	<div class="tu" id="tu">
+		<div class="slider" id="slider">
+			<div class="slide"><img src="imgs/0.png" alt=""></div>
+			<div class="slide"><img src="imgs/2a59303c8861468da274dd26c0bf62d3.jpeg" alt=""></div>
+			<div class="slide"><img src="imgs/5efc57c80cb0c_600_0.jpg" alt=""></div>
+			<div class="slide"><img src="imgs/31c09cad30494bc4a3b524a600238d28_th.jpeg" alt=""></div>
+			<div class="slide"><img src="20140729111504208.jpg" alt=""></div>
+			<div class="slide"><img src="imgs/0.png" alt=""></div>
+			<div class="slide"><img src="imgs/2a59303c8861468da274dd26c0bf62d3.jpeg" alt=""></div>
+		</div>
+		<span id="left"><</span>
+		<span id="right">></span>
+		<ul class="van" id="van">
+			<li class="active"></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+	</div>
+	<script  type="text/javascript">
+		var mima = document.getElementById("mima");
+        var ming = document.getElementById("ming");
+        var one = document.getElementById("one");
+        var two = document.getElementById("two");
+        var liji = document.getElementById("liji");
+        var box = document.getElementById("box");
+        var answer = document.getElementById("answer");
+        var floaticon = document.getElementById("floaticon");
+        
+        var inter = document.getElementById("inter");
+        ming.onblur = function(){
+            if(!ming.value){
+                one.innerHTML = "用户名不能为空";
+            }
+        }
+        ming.onfocus = function(){
+            one.innerHTML = null;
+        }
+        mima.onblur = function  () {
+            if(!mima.value){
+                two.innerHTML = "密码不能为空";
+            }
+        }
+        mima.onfocus = function(){
+            two.innerHTML = null;
+        }
+        liji.onclick = function(){
+            var r = confirm("登陆成功");
+            if (r == true) {
+                x = "您按了确认！";
+            } else {
+                x = "您按了取消！";
+            }
+            ming.value=null;
+            mima.value=null;
+        }
+
+		var tu = document.getElementById('tu');
+		var oNavlist = document.getElementById('van').children;
+		var slider = document.getElementById('slider');
+		var left = document.getElementById('left');
+		var right = document.getElementById('right');
+		var index = 1;
+		var timer;
+		var isMoving = false;
+		tu.onmouseover = function(){
+			animate(left,{opacity:50})
+			animate(right,{opacity:50})
+			clearInterval(timer)
+		}
+		tu.onmouseout = function(){
+			animate(left,{opacity:0})
+			animate(right,{opacity:0})
+			timer = setInterval(next, 3000);
+		}
+		right.onclick = next;
+		left.onclick = prev;
+		for( var i=0; i<oNavlist.length; i++ ){
+			oNavlist[i].index = i;
+			oNavlist[i].onclick = function(){
+				index = this.index+1;
+				navmove();
+				animate(slider,{left:-1200*index});
+			}
+		}
+		function next(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index++;
+			navmove();
+			animate(slider,{left:-1200*index},function(){
+				if(index==6){
+					slider.style.left = '-1200px';
+					index = 1;
+				}
+				isMoving = false;
+			});
+		}
+		function prev(){
+			if(isMoving){
+				return;
+			}
+			isMoving = true;
+			index--;
+			navmove();
+			animate(slider,{left:-1200*index},function(){
+				if(index==0){
+					slider.style.left = '-6000px';
+					index = 5;
+				}
+				isMoving = false;
+			});
+		}
+		function navmove(){
+			for( var i=0; i<oNavlist.length; i++ ){
+				oNavlist[i].className = "";
+			}
+			if(index >5 ){
+				oNavlist[0].className = "active";
+			}else if(index<=0){
+				oNavlist[4].className = "active";
+			}else {
+				oNavlist[index-1].className = "active";
+			}
+		}
+		timer = setInterval(next, 3000);
+ 
+ 		
+	    function getDate(){
+                 //获取当前时间
+               var date = new Date();
+                 //格式化为本地时间格式
+                 var date1 = date.toLocaleString();
+               //获取div
+                var div1 = document.getElementById("times");
+                //将时间写入div
+               div1.innerHTML = date1;
+            }
+            setInterval("getDate()",1000);
+
+	</script>
+</body>
+</html>
